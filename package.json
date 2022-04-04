@@ -6,8 +6,7 @@
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:prod": "cross-env NODE_ENV=production webpack",
     "watch": "cross-env NODE_ENV=development webpack --watch",
-    "serve": "cross-env NODE_ENV=development webpack serve",
-    "clean": "rimraf ./dist/*"
+    "serve": "cross-env NODE_ENV=development webpack serve"
   },
   "author": "Yu-Cheng Feng",
   "license": "ISC",
@@ -18,8 +17,10 @@
     "autoprefixer": "^10.4.4",
     "babel-loader": "^8.2.4",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
+    "cssnano": "^5.1.7",
     "html-webpack-plugin": "^5.5.0",
     "jquery": "^3.6.0",
     "mini-css-extract-plugin": "^2.6.0",
@@ -36,7 +37,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.8",
-    "@iconify/iconify": "^2.2.1",
-    "copy-webpack-plugin": "^10.2.4"
+    "@iconify/iconify": "^2.2.1"
   }
 }

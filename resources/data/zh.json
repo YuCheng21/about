@@ -1,0 +1,57 @@
+{
+  "about": {
+    "name": "馮宇丞",
+    "first name": "Yu-Cheng",
+    "last name": "Feng",
+    "english name": "Thomas",
+    "email": "fyc621@gmail.com"
+  },
+  "education": [
+    {
+      "school": "國立高雄應用科技大學",
+      "degree": "電機工程學士",
+      "field of study": "電機工程系",
+      "country": "台灣",
+      "city": "高雄",
+      "date": "2017-2021"
+    },
+    {
+      "school": "國立高雄科技大學",
+      "degree": "電機工程碩士",
+      "field of study": "電機工程系",
+      "country": "台灣",
+      "city": "高雄",
+      "date": "2021-當前"
+    }
+  ],
+  "publication": [
+    {
+      "title": "An Image Quality Predictor based on Convolution Neural Networks",
+      "author": "W.-S. Yang, Y.-C. Feng, and T.-Y. Liang",
+      "published in": "in 2021 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)",
+      "date": "Nov. 2021",
+      "page": "pp. 1–2",
+      "doi": "10.1109/ISPACS51563.2021.9651075"
+    }
+  ],
+  "skills": [
+
+  ],
+  "projects": [
+
+  ],
+  "work experience": [
+    {
+      "title": "網頁開發人員",
+      "location": "高雄醫學大學護理系",
+      "date": "2022.01-2022.06"
+    }
+  ],
+  "honors": [
+    {
+      "date": "",
+      "name": "",
+      "location": ""
+    }
+  ]
+}
