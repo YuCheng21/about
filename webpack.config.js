@@ -73,5 +73,10 @@ module.exports = {
                 { from: "resources/img", to: "img" },
             ],
         }),
+        new CopyPlugin({
+            patterns: [
+                { from: "resources/CNAME", to: "./" },
+            ],
+        }),
     ],
 };
