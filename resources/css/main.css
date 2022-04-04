@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+    body{
+        @apply font-serif
+    }
     h1 {
         @apply text-2xl
     }
     h2 {
         @apply text-xl border-b-2 border-b-black}
     section {
-        @apply py-2 mb-2}
+        @apply mb-4}
 }
