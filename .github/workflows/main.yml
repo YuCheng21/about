@@ -34,8 +34,8 @@ jobs:
 
       - name: 部署
         run: |
-          npm run build
-          cd ./docs
+          npm run build:prod
+          cd ./public
           git init
           git config user.name "${{secrets.GIT_NAME}}"
           git config user.email "${{secrets.GIT_EMAIL}}"
