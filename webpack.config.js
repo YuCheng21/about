@@ -47,6 +47,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./resources/views/index.html",
             filename: "index.html",
+            pageData: require('./resources/data/en.json'),
+            language: 'english'
+        }),
+        new HtmlWebpackPlugin({
+            template: "./resources/views/index.html",
+            filename: "zh.html",
+            pageData: require('./resources/data/zh.json'),
+            language: 'chinese'
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [
@@ -58,6 +66,11 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: "resources/favicon", to: "favicon" },
+            ],
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: "resources/img", to: "img" },
             ],
         }),
     ],

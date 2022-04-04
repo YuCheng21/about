@@ -1,0 +1,200 @@
+{
+  "about": {
+    "name": "About",
+    "data": {
+      "name": "Thomas",
+      "firstName": "Yu-Cheng",
+      "lastName": "Feng",
+      "englishName": "Thomas",
+      "email": "fyc621@gmail.com",
+      "emailHref": "mailto:fyc621@gmail.com",
+      "github": "yucheng21",
+      "githubHref": "https://github.com/YuCheng21",
+      "website": "yucheng.me",
+      "websiteHref": "https://yucheng.me/",
+      "description1": "I am currently studying for a master's degree in electrical engineering at Kaohsiung tech HPDS Lab. My research direction includes deep learning technology and \"3D vision\" related topics. I'm also a web developer and occasionally make little tools to make life easier.",
+      "description2": "在空閒時，我喜歡從互聯網上學習新技能，並記下我的所學。從錯誤中學習，從失敗中成長。嘗試解決學習中遇到的困難。"
+    }
+  },
+  "education": {
+    "name": "Education",
+    "data": [
+      {
+        "school": "National Kaohsiung University of Science and Technology (NKUST)",
+        "degree": "Master of Electrical Engineering - MEE",
+        "fieldOfStudy": "the Department of Electrical Engineering",
+        "location": "Kaohsiung, Taiwan",
+        "date": "2021-present",
+        "description": [
+          "Researcher at the NKUST HPDS Lab focusing on deep learning and 3D vision."
+        ]
+      },
+      {
+        "school": "National Kaohsiung University of Science and Technology (NKUST)",
+        "degree": "Bachelor of Electrical Engineering - BEE",
+        "fieldOfStudy": "the Department of Electrical Engineering",
+        "location": "Kaohsiung, Taiwan",
+        "date": "2017-2021",
+        "description": []
+      }
+    ]
+  },
+  "publications": {
+    "name": "Publications",
+    "data": [
+      {
+        "title": "“An Image Quality Predictor based on Convolution Neural Networks,” ",
+        "author": "W.-S. Yang, Y.-C. Feng, and T.-Y. Liang, ",
+        "publishedIn": "in 2021 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS), ",
+        "date": "Nov. 2021, ",
+        "page": "pp. 1–2. ",
+        "doi": "doi: 10.1109/ISPACS51563.2021.9651075.",
+        "href": "https://doi.org/10.1109/ISPACS51563.2021.9651075"
+      }
+    ]
+  },
+  "skills": {
+    "name": "Skills",
+    "data": {
+      "Research": [
+        "Deep Learning",
+        "3D Vision"
+      ],
+      "Programming": [
+        "Python",
+        "Javascript/HTML/CSS",
+        "C",
+        "Java",
+        "C#",
+        "PHP",
+        "R",
+        "SQL",
+        "Shell Script"
+      ],
+      "Tool:AI": [
+        "Pytorch",
+        "Sklearn",
+        "OpenCV"
+      ],
+      "Tool:Web": [
+        "Flask",
+        "Laravel",
+        "Webpack",
+        "Bootstrap",
+        "Tailwindcss",
+        "Swagger"
+      ],
+      "Tool:DB": [
+        "MySQL",
+        "MariaDB",
+        "SQLite"
+      ],
+      "Tool:Others": [
+        "Git",
+        "Docker",
+        "Kubernetes",
+        "SSH",
+        "Ubuntu",
+        "Nginx/Apache",
+        "GCP"
+      ]
+    }
+  },
+  "projects": {
+    "name": "Projects",
+    "data": [
+      {
+        "title": "C 語言作業批改小工具",
+        "tag": "Tool",
+        "description": "批改大學部一年級計算機程式設計每週作業的小工具，幫助做出簡單的給分。",
+        "date": "2022.03"
+      },
+      {
+        "title": "血癌照護管理平台",
+        "tag": "Website",
+        "description": "血癌照護管理平台用於幫助個案管理治療相關資訊，提供相關 API 用於個案行動裝置串接。",
+        "date": "2022.02-2022.06"
+      },
+      {
+        "title": "課程抵免申請系統",
+        "tag": "Website",
+        "description": "提供系上需要抵免成績的學生完成相關的抵免作業。",
+        "date": "2021.07-2021.09"
+      },
+      {
+        "title": "提取課程結構規劃表",
+        "tag": "Tool",
+        "description": "提取高雄科技大學電機工程系的課程結構規劃表，從 PDF 轉換特定內容到 CSV 格式，方便其他系統利用。",
+        "date": "2021.08"
+      },
+      {
+        "title": "學程進度查詢系統",
+        "tag": "Website",
+        "description": "學生學程查詢系統透過分析學生成績單，來了解學生的學習進度，提供未來選擇方向的參考。",
+        "date": "2021.06-2021.07"
+      },
+      {
+        "title": "專題選組預測系統",
+        "tag": "Website",
+        "description": "以過往學生必修科目與專題成績作為資料進行線性迴歸，預測學生未來在電力、控制、資通三組可能取得的成績，作為專題選組的參考。",
+        "date": "2021.05-2021.06"
+      },
+      {
+        "title": "Logitech 下單機器人",
+        "tag": "GUI",
+        "description": "透過 Selenium 套件模擬瀏覽器動作，自動登入羅技網站並開啟商品網址，並且於商品優惠時段開始時進行購買。",
+        "date": "2021.02"
+      },
+      {
+        "title": "Zuvio 自動點名",
+        "tag": "GUI",
+        "description": "透過 Selenium 套件模擬瀏覽器動作，自動登入 Zuvio 開啟點名網址，並且隨機重新整理網頁，查看點名是否已經開放。",
+        "date": "2020.06"
+      },
+      {
+        "title": "跟車行動裝置管理",
+        "tag": "Android",
+        "description": "顯示好友的目前定位與行動路徑，幫助駕駛員在一群好友出遊時，行徑在車隊前方的車輛能夠以此程式觀看到後方車輛的位置。",
+        "date": "2019.07-2020.07"
+      }
+    ]
+  },
+  "workExperiences": {
+    "name": "Work Experiences",
+    "data": [
+      {
+        "title": "科技部計畫研究助理",
+        "job": "網站開發人員",
+        "location": "高雄醫學大學護理系",
+        "date": "2022.01-2022.06",
+        "description": [
+          "使用 Figma 設計網站的架構",
+          "使用 PHP Laravel + MariaDB 開發網站前端與後端",
+          "使用 Swagger (OpenAPI) 建立 REST API 供行動裝置使用",
+          "部署在 FreeBSD 系統的 Apache Server 上"
+        ]
+      },
+      {
+        "title": "教育部新工程教育方法實驗與建構計畫（高科電機）",
+        "job": "網站開發人員",
+        "location": "高雄科技大學電機工程系",
+        "date": "2022.06-2022.07",
+        "description": [
+          "使用 Python Flask + MySQL 開發網站前端與後端",
+          "分析成績單來了解綜合趨勢，並產生學程證書於已完成學程的學生",
+          "使用 Docker compose 整合容器並部署於 Ubuntu"
+        ]
+      }
+    ]
+  },
+  "honors": {
+    "name": "Honors",
+    "data": [
+      {
+        "date": "2021",
+        "title": "110 Outstanding Performance by Teaching Assistants for the Year",
+        "location": "Kaohsiung Tech"
+      }
+    ]
+  }
+}

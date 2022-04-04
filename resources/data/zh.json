@@ -3,11 +3,16 @@
     "name": "關於",
     "data": {
       "name": "馮宇丞",
-      "first name": "Yu-Cheng",
-      "last name": "Feng",
-      "english name": "Thomas",
+      "firstName": "Yu-Cheng",
+      "lastName": "Feng",
+      "englishName": "Thomas",
       "email": "fyc621@gmail.com",
-      "description1": "我目前在高雄科技大學 HPDS Lab 修讀碩士學位，預計 2023.09 畢業。研究方向包括深度學系技術與「三維視覺」相關主題。同時我也是一名網站開發人員，偶爾做一些小工具讓生活更輕鬆。",
+      "emailHref": "mailto:fyc621@gmail.com",
+      "github": "yucheng21",
+      "githubHref": "https://github.com/YuCheng21",
+      "website": "yucheng.me",
+      "websiteHref": "https://yucheng.me/",
+      "description1": "我目前在高雄科技大學 HPDS Lab 修讀碩士學位。研究方向包括深度學習技術與「三維視覺」相關主題。同時我也是一名網站開發人員，偶爾做一些小工具讓生活更輕鬆。",
       "description2": "在空閒時，我喜歡從互聯網上學習新技能，並記下我的所學。從錯誤中學習，從失敗中成長。嘗試解決學習中遇到的困難。"
     }
   },
@@ -15,31 +20,36 @@
     "name": "教育",
     "data": [
       {
-        "school": "國立高雄應用科技大學",
-        "degree": "電機工程學士",
-        "field of study": "電機工程系",
-        "location": "高雄-台灣",
-        "date": "2017-2021"
-      },
-      {
         "school": "國立高雄科技大學",
         "degree": "電機工程碩士",
-        "field of study": "電機工程系",
-        "location": "高雄-台灣",
-        "date": "2021-當前"
+        "fieldOfStudy": "電機工程系",
+        "location": "高雄|台灣",
+        "date": "2021-當前",
+        "description": [
+          "在高雄科技大學 HPDS Lab 研究 Deep Learning 與 3D Vision"
+        ]
+      },
+      {
+        "school": "國立高雄應用科技大學",
+        "degree": "電機工程學士",
+        "fieldOfStudy": "電機工程系",
+        "location": "高雄|台灣",
+        "date": "2017-2021",
+        "description": []
       }
     ]
   },
-  "publication": {
+  "publications": {
     "name": "出版",
     "data": [
       {
-        "title": "An Image Quality Predictor based on Convolution Neural Networks",
-        "author": "W.-S. Yang, Y.-C. Feng, and T.-Y. Liang",
-        "published in": "in 2021 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)",
-        "date": "Nov. 2021",
-        "page": "pp. 1–2",
-        "doi": "10.1109/ISPACS51563.2021.9651075"
+        "title": "“An Image Quality Predictor based on Convolution Neural Networks,” ",
+        "author": "W.-S. Yang, Y.-C. Feng, and T.-Y. Liang, ",
+        "publishedIn": "in 2021 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS), ",
+        "date": "Nov. 2021, ",
+        "page": "pp. 1–2. ",
+        "doi": "doi: 10.1109/ISPACS51563.2021.9651075.",
+        "href": "https://doi.org/10.1109/ISPACS51563.2021.9651075"
       }
     ]
   },
@@ -61,33 +71,33 @@
         "SQL",
         "Shell Script"
       ],
-      "工具": {
-        "深度學習": [
-          "Pytorch"
-        ],
-        "網路": [
-          "Flask",
-          "Laravel",
-          "Webpack",
-          "Bootstrap",
-          "Tailwindcss",
-          "Swagger"
-        ],
-        "資料庫": [
-          "MySQL",
-          "MariaDB",
-          "SQLite"
-        ],
-        "其它": [
-          "Git",
-          "Docker",
-          "Kubernetes",
-          "SSH",
-          "Ubuntu",
-          "Nginx/Apache",
-          "GCP"
-        ]
-      }
+      "工具:人工智慧": [
+        "Pytorch",
+        "Sklearn",
+        "OpenCV"
+      ],
+      "工具:網路": [
+        "Flask",
+        "Laravel",
+        "Webpack",
+        "Bootstrap",
+        "Tailwindcss",
+        "Swagger"
+      ],
+      "工具:資料庫": [
+        "MySQL",
+        "MariaDB",
+        "SQLite"
+      ],
+      "工具:其它": [
+        "Git",
+        "Docker",
+        "Kubernetes",
+        "SSH",
+        "Ubuntu",
+        "Nginx/Apache",
+        "GCP"
+      ]
     }
   },
   "projects": {
@@ -95,66 +105,66 @@
     "data": [
       {
         "title": "C 語言作業批改小工具",
-        "Tag": "Tool",
+        "tag": "Tool",
         "description": "批改大學部一年級計算機程式設計每週作業的小工具，幫助做出簡單的給分。",
         "date": "2022.03"
       },
       {
         "title": "血癌照護管理平台",
-        "Tag": "Website",
+        "tag": "Website",
         "description": "血癌照護管理平台用於幫助個案管理治療相關資訊，提供相關 API 用於個案行動裝置串接。",
         "date": "2022.02-2022.06"
       },
       {
         "title": "課程抵免申請系統",
-        "Tag": "Website",
+        "tag": "Website",
         "description": "提供系上需要抵免成績的學生完成相關的抵免作業。",
         "date": "2021.07-2021.09"
       },
       {
         "title": "提取課程結構規劃表",
-        "Tag": "Tool",
+        "tag": "Tool",
         "description": "提取高雄科技大學電機工程系的課程結構規劃表，從 PDF 轉換特定內容到 CSV 格式，方便其他系統利用。",
         "date": "2021.08"
       },
       {
         "title": "學程進度查詢系統",
-        "Tag": "Website",
+        "tag": "Website",
         "description": "學生學程查詢系統透過分析學生成績單，來了解學生的學習進度，提供未來選擇方向的參考。",
         "date": "2021.06-2021.07"
       },
       {
         "title": "專題選組預測系統",
-        "Tag": "Website",
-        "description": "以過往學生必修科目與專題成績作為資料進行線性迴歸，預測學生未來在電力、控制、資通三組可能取得的成績，最為專題選組的參考。",
+        "tag": "Website",
+        "description": "以過往學生必修科目與專題成績作為資料進行線性迴歸，預測學生未來在電力、控制、資通三組可能取得的成績，作為專題選組的參考。",
         "date": "2021.05-2021.06"
       },
       {
         "title": "Logitech 下單機器人",
-        "Tag": "GUI",
+        "tag": "GUI",
         "description": "透過 Selenium 套件模擬瀏覽器動作，自動登入羅技網站並開啟商品網址，並且於商品優惠時段開始時進行購買。",
         "date": "2021.02"
       },
       {
         "title": "Zuvio 自動點名",
-        "Tag": "GUI",
+        "tag": "GUI",
         "description": "透過 Selenium 套件模擬瀏覽器動作，自動登入 Zuvio 開啟點名網址，並且隨機重新整理網頁，查看點名是否已經開放。",
         "date": "2020.06"
       },
       {
         "title": "跟車行動裝置管理",
-        "Tag": "Android",
+        "tag": "Android",
         "description": "顯示好友的目前定位與行動路徑，幫助駕駛員在一群好友出遊時，行徑在車隊前方的車輛能夠以此程式觀看到後方車輛的位置。",
         "date": "2019.07-2020.07"
       }
     ]
   },
-  "work experience": {
+  "workExperiences": {
     "name": "工作經歷",
     "data": [
       {
         "title": "科技部計畫研究助理",
-        "job": "網頁開發人員",
+        "job": "網站開發人員",
         "location": "高雄醫學大學護理系",
         "date": "2022.01-2022.06",
         "description": [
@@ -166,7 +176,7 @@
       },
       {
         "title": "教育部新工程教育方法實驗與建構計畫（高科電機）",
-        "job": "網頁開發人員",
+        "job": "網站開發人員",
         "location": "高雄科技大學電機工程系",
         "date": "2022.06-2022.07",
         "description": [
@@ -181,9 +191,9 @@
     "name": "榮譽",
     "data": [
       {
-        "date": "2021.11",
-        "name": "110 年度教學助理表現優異",
-        "location": ""
+        "date": "2021",
+        "title": "110 年度教學助理表現優異",
+        "location": "高科大"
       }
     ]
   }
