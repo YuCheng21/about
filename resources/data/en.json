@@ -71,12 +71,12 @@
         "SQL",
         "Shell Script"
       ],
-      "Tool:AI": [
+      "Tools: AI": [
         "Pytorch",
         "Sklearn",
         "OpenCV"
       ],
-      "Tool:Web": [
+      "Tools: Web": [
         "Flask",
         "Laravel",
         "Webpack",
@@ -84,12 +84,12 @@
         "Tailwindcss",
         "Swagger"
       ],
-      "Tool:DB": [
+      "Tools: Database": [
         "MySQL",
         "MariaDB",
         "SQLite"
       ],
-      "Tool:Others": [
+      "Tools: Others": [
         "Git",
         "Docker",
         "Kubernetes",
