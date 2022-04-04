@@ -69,7 +69,7 @@
                     <span class="inline-block font-bold text-primary-900">
                         <span><%= item.school %></span>
                     </span>
-                    <span class="inline-block font-bold"><%= item.location %></span>
+                    <span class="inline-block font-bold italic"><%= item.location %></span>
                 </span>
                 <span class="flex justify-between italic">
                     <span class="inline-block font-bold"><%= item.degree %></span>
@@ -104,8 +104,8 @@
         <ul>
             <% Object.keys(htmlWebpackPlugin.options.pageData.skills.data).forEach((key, value) => { %>
             <li class="flex mb-2">
-                <div class="font-bold italic w-[30%]"><%= key %></div>
-                <div class="w-[70%] text-right">
+                <div class="font-bold italic w-[20%]"><%= key %></div>
+                <div class="w-[80%] text-right">
                     <% htmlWebpackPlugin.options.pageData.skills.data[key].forEach((item, index) => { %>
                     <% if(index + 1 < htmlWebpackPlugin.options.pageData.skills.data[key].length){ %>
                     <span><%= item %> | </span>
@@ -128,7 +128,7 @@
                             <span class="font-bold text-primary-900"><%= value.title %></span>
                             <span class="italic">[<%= value.tag %>]</span>
                         </span>
-                        <span class="inline-block font-bold"><%= value.date %></span>
+                        <span class="inline-block font-bold italic"><%= value.date %></span>
                     </span>
                 <ul class="list-disc pl-4">
                     <li><%= value.description %></li>
@@ -146,7 +146,7 @@
                     <span class="inline-block font-bold text-primary-900">
                         <span><%= value.title %></span>
                     </span>
-                    <span class="inline-block font-bold"><%= value.job %> | <%= value.date %></span>
+                    <span class="inline-block font-bold italic"><%= value.job %> | <%= value.date %></span>
                 </span>
                 <ul class="list-disc pl-4">
                     <% value.description.forEach(element => { %>
@@ -167,7 +167,7 @@
                         <span class="font-bold italic mr-2"><%= value.date %></span>
                         <span class="font-bold text-primary-900"><%= value.title %></span>
                     </span>
-                    <span class="inline-block font-bold"><%= value.location %></span>
+                    <span class="inline-block font-bold italic"><%= value.location %></span>
                 </span>
             </li>
             <% }) %>
