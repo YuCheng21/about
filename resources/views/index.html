@@ -27,8 +27,8 @@
                 <span><%= htmlWebpackPlugin.options.pageData.about.data.lastName %></span>
                 <span>(<%= htmlWebpackPlugin.options.pageData.about.data.name %>)</span>
             </h1>
-            <ul class="text-sm flex flex-row space-x-[20px] mb-2">
-                <li class="flex items-center">
+            <ul class="text-sm flex flex-col sm:flex-row sm:space-x-[20px] mb-2">
+                <li class="flex items-center ">
                     <span class="iconify-inline mr-2" data-icon="fluent:mail-20-filled"></span>
                     <a href="<%= htmlWebpackPlugin.options.pageData.about.data.emailHref %>">
                         <%= htmlWebpackPlugin.options.pageData.about.data.email %>
@@ -65,13 +65,13 @@
         <ul>
             <% htmlWebpackPlugin.options.pageData.education.data.forEach(item => { %>
             <li class="mb-2">
-                <span class="flex justify-between">
+                <span class="flex sm:flex-row flex-col justify-between">
                     <span class="inline-block font-bold text-primary-900">
                         <span><%= item.school %></span>
                     </span>
                     <span class="inline-block font-bold italic"><%= item.location %></span>
                 </span>
-                <span class="flex justify-between italic">
+                <span class="flex sm:flex-row flex-col justify-between italic">
                     <span class="inline-block font-bold"><%= item.degree %></span>
                     <span class="inline-block"><%= item.date %></span>
                 </span>
@@ -103,9 +103,9 @@
         <h2><%= htmlWebpackPlugin.options.pageData.skills.name %></h2>
         <ul>
             <% Object.keys(htmlWebpackPlugin.options.pageData.skills.data).forEach((key, value) => { %>
-            <li class="flex mb-2">
+            <li class="flex sm:flex-row flex-col mb-2">
                 <div class="font-bold italic w-[20%]"><%= key %></div>
-                <div class="w-[80%] text-right">
+                <div class="w-[80%] sm:text-right">
                     <% htmlWebpackPlugin.options.pageData.skills.data[key].forEach((item, index) => { %>
                     <% if(index + 1 < htmlWebpackPlugin.options.pageData.skills.data[key].length){ %>
                     <span><%= item %> | </span>
@@ -123,7 +123,7 @@
         <ul>
             <% htmlWebpackPlugin.options.pageData.projects.data.forEach((value, key) => { %>
             <li class="mb-2">
-                    <span class="flex justify-between">
+                    <span class="flex sm:flex-row flex-col justify-between">
                         <span class="inline-block">
                             <span class="font-bold text-primary-900"><%= value.title %></span>
                             <span class="italic">[<%= value.tag %>]</span>
@@ -142,7 +142,7 @@
         <ul>
             <% htmlWebpackPlugin.options.pageData.workExperiences.data.forEach((value, key) => { %>
             <li class="mb-2">
-                <span class="flex justify-between">
+                <span class="flex sm:flex-row flex-col justify-between">
                     <span class="inline-block font-bold text-primary-900">
                         <span><%= value.title %></span>
                     </span>
@@ -162,7 +162,7 @@
         <ul>
             <% htmlWebpackPlugin.options.pageData.honors.data.forEach((value, key) => { %>
             <li class="mb-2">
-                <span class="flex justify-between">
+                <span class="flex sm:flex-row flex-col justify-between">
                     <span class="inline-block">
                         <span class="font-bold italic mr-2"><%= value.date %></span>
                         <span class="font-bold text-primary-900"><%= value.title %></span>
