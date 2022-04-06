@@ -104,7 +104,7 @@
         <ul>
             <% Object.keys(htmlWebpackPlugin.options.pageData.skills.data).forEach((key, value) => { %>
             <li class="flex sm:flex-row flex-col mb-2">
-                <div class="font-bold italic w-[20%]"><%= key %></div>
+                <div class="font-bold italic sm:w-[20%]"><%= key %></div>
                 <div class="w-[80%] sm:text-right">
                     <% htmlWebpackPlugin.options.pageData.skills.data[key].forEach((item, index) => { %>
                     <% if(index + 1 < htmlWebpackPlugin.options.pageData.skills.data[key].length){ %>
@@ -162,13 +162,13 @@
         <ul>
             <% htmlWebpackPlugin.options.pageData.honors.data.forEach((value, key) => { %>
             <li class="mb-2">
-                <span class="flex sm:flex-row flex-col justify-between">
-                    <span class="inline-block">
+                <div class="flex sm:flex-row flex-col justify-between">
+                    <div class="flex sm:flex-row flex-col">
                         <span class="font-bold italic mr-2"><%= value.date %></span>
                         <span class="font-bold text-primary-900"><%= value.title %></span>
-                    </span>
+                    </div>
                     <span class="inline-block font-bold italic"><%= value.location %></span>
-                </span>
+                </div>
             </li>
             <% }) %>
         </ul>
