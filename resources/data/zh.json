@@ -43,6 +43,16 @@
     "name": "出版",
     "data": [
       {
+        "title": "“A Voxel Generator Based on Autoencoder,” ",
+        "author": "B.-C. Huang, Y.-C. Feng, and T.-Y. Liang, ",
+        "journal": "Applied Sciences, ",
+        "volume": "vol. 12, ",
+        "number": "no. 21, ",
+        "date": "Jan. 2022, ",
+        "doi": "doi: 10.3390/app122110757.",
+        "href": "https://doi.org/10.3390/app122110757"
+      },
+      {
         "title": "“An Image Quality Predictor based on Convolution Neural Networks,” ",
         "author": "W.-S. Yang, Y.-C. Feng, and T.-Y. Liang, ",
         "publishedIn": "in 2021 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS), ",
@@ -94,8 +104,9 @@
         "Docker",
         "Kubernetes",
         "SSH",
-        "Ubuntu",
+        "Ubuntu/TrueNAS",
         "Nginx/Apache",
+        "QT",
         "GCP"
       ]
     }
@@ -103,6 +114,18 @@
   "projects": {
     "name": "專案",
     "data": [
+      {
+        "title": "Pixel2point 論文模型實作",
+        "tag": "AI",
+        "description": "將一張 2D 的輸入圖片，經過 CNN 網路轉換成 3D 點雲。",
+        "date": "2022.09-"
+      },
+      {
+        "title": "高醫乳癌平台資料轉換工具",
+        "tag": "GUI",
+        "description": "一個圖形化介面程式，將平台所匯出的個案副作用資料進行正規化，提供後續分析使用。",
+        "date": "2022.07"
+      },
       {
         "title": "C 語言作業批改小工具",
         "tag": "Tool",
@@ -163,7 +186,16 @@
     "name": "工作經歷",
     "data": [
       {
-        "title": "科技部計畫研究助理",
+        "title": "科技部計畫研究助理（MOST111-2221-E992-048 ）",
+        "job": "使用介面開發",
+        "location": "高雄科技大學電機工程系",
+        "date": "2022.08-2023.07",
+        "description": [
+          "開發中..."
+        ]
+      },
+      {
+        "title": "科技部計畫研究助理（MOST110-2511-H037-001）",
         "job": "網站開發人員",
         "location": "高雄醫學大學護理系",
         "date": "2022.01-2022.06",

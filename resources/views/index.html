@@ -92,9 +92,12 @@
                 <span><%= item.author %></span>
                 <span><%= item.title %></span>
                 <span class="italic"><%= item.publishedIn %></span>
+                <span class="italic"><%= item.journal %></span>
+                <span><%= item.volume %></span>
+                <span><%= item.number %></span>
                 <span><%= item.date %></span>
                 <span><%= item.page %></span>
-                <a href="<%= item.href %>"><%= item.doi %></a>
+                <a href="<%= item.href %>" target="_blank"><%= item.doi %></a>
             </li>
             <% }) %>
         </ul>
