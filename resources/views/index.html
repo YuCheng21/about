@@ -22,35 +22,40 @@
     <div class="flex sm:flex-row flex-col justify-between">
         <img src="../img/avatar/avatar-6.jpg" alt="avatar" class="sm:h-[150px] sm:ml-[20px] sm:block hidden">
         <div class="sm:order-first">
-            <h1 class="mb-2">
-                <span><%= htmlWebpackPlugin.options.pageData.about.data.firstName %></span>
-                <span><%= htmlWebpackPlugin.options.pageData.about.data.lastName %></span>
-                <span>(<%= htmlWebpackPlugin.options.pageData.about.data.name %>)</span>
-            </h1>
-            <ul class="text-sm flex flex-col sm:flex-row sm:space-x-[20px] mb-2">
-                <li class="flex items-center ">
-                    <span class="iconify-inline mr-2" data-icon="fluent:mail-20-filled"></span>
-                    <a href="<%= htmlWebpackPlugin.options.pageData.about.data.emailHref %>">
-                        <%= htmlWebpackPlugin.options.pageData.about.data.email %>
-                    </a>
-                </li>
-                <li class="flex items-center">
-                    <span class="iconify-inline mr-2" data-icon="akar-icons:github-fill"></span>
-                    <a href="<%= htmlWebpackPlugin.options.pageData.about.data.githubHref %>">
-                        <%= htmlWebpackPlugin.options.pageData.about.data.github %>
-                    </a>
-                </li>
-                <li class="flex items-center">
-                    <span class="iconify-inline mr-2" data-icon="dashicons:admin-site"></span>
-                    <a href="<%= htmlWebpackPlugin.options.pageData.about.data.websiteHref %>">
-                        <%= htmlWebpackPlugin.options.pageData.about.data.website %>
-                    </a>
-                </li>
-                <li class="flex items-center">
-                    <span class="iconify-inline mr-2" data-icon="fa:phone-square"></span>
-                    <span>secret</span>
-                </li>
-            </ul>
+            <div class="flex justify-between">
+                <img src="../img/avatar/avatar-6.jpg" alt="avatar" class="sm:hidden h-[150px] ml-[20px] block">
+                <div class="order-first">
+                    <h1 class="mb-2 sm:text-2xl text-xl">
+                        <span><%= htmlWebpackPlugin.options.pageData.about.data.firstName %></span>
+                        <span><%= htmlWebpackPlugin.options.pageData.about.data.lastName %></span>
+                        <span class="sm:inline block">(<%= htmlWebpackPlugin.options.pageData.about.data.name %>)</span>
+                    </h1>
+                    <ul class="text-sm flex flex-col sm:flex-row sm:space-x-[20px] mb-2">
+                        <li class="flex items-center">
+                            <span class="iconify-inline mr-2" data-icon="fluent:mail-20-filled"></span>
+                            <a href="<%= htmlWebpackPlugin.options.pageData.about.data.emailHref %>">
+                                <%= htmlWebpackPlugin.options.pageData.about.data.email %>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="iconify-inline mr-2" data-icon="akar-icons:github-fill"></span>
+                            <a href="<%= htmlWebpackPlugin.options.pageData.about.data.githubHref %>">
+                                <%= htmlWebpackPlugin.options.pageData.about.data.github %>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="iconify-inline mr-2" data-icon="dashicons:admin-site"></span>
+                            <a href="<%= htmlWebpackPlugin.options.pageData.about.data.websiteHref %>">
+                                <%= htmlWebpackPlugin.options.pageData.about.data.website %>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="iconify-inline mr-2" data-icon="fa:phone-square"></span>
+                            <span>secret</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <section id="about">
                 <h2><%= htmlWebpackPlugin.options.pageData.about.name %></h2>
                 <p><%= htmlWebpackPlugin.options.pageData.about.data.description1 %></p>
