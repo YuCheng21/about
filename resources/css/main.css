@@ -15,5 +15,7 @@
     section {
         @apply mb-4
     }
-
+    section ul>li>span{
+        @apply break-after-avoid-page
+    }
 }
