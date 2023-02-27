@@ -191,7 +191,8 @@
         "location": "高雄科技大學電機工程系",
         "date": "2022.08-2023.07",
         "description": [
-          "開發中..."
+          "使用 Python Flask 基於 MVC 框架開發網站前端",
+          "與後端區塊鏈串接 API 實現基於區塊鏈的雙盲測驗平台"
         ]
       },
       {
@@ -214,7 +215,7 @@
         "description": [
           "使用 Python Flask + MySQL 開發網站前端與後端",
           "分析成績單來了解綜合趨勢，並產生學程證書於已完成學程的學生",
-          "使用 Docker compose 整合容器並部署於 Ubuntu"
+          "使用 Docker compose 整合 Nginx 並部署於 Ubuntu"
         ]
       }
     ]
@@ -226,6 +227,11 @@
         "date": "2021",
         "title": "110 Outstanding Performance by Teaching Assistants for the Year",
         "location": "Kaohsiung Tech"
+      },
+      {
+        "date": "2016",
+        "title": "105 National High School Engineering Technology Competition - Mechatronics 5th",
+        "location": "NIHS"
       }
     ]
   }
