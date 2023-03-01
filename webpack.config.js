@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
+require('dotenv').config();
 const path = require('path');
 
 module.exports = {
@@ -55,6 +56,13 @@ module.exports = {
             filename: "zh.html",
             pageData: require('./resources/data/zh.json'),
             language: 'chinese'
+        }),
+        new HtmlWebpackPlugin({
+            template: "./resources/views/cv.html",
+            filename: "cv.html",
+            pageData: require('./resources/data/cv.json'),
+            language: 'chinese',
+            environment: process.env
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [

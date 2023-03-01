@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.8",
-    "@iconify/iconify": "^2.2.1"
+    "@iconify/iconify": "^2.2.1",
+    "dotenv": "^16.0.3"
   }
 }

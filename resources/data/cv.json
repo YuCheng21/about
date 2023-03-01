@@ -1,0 +1,252 @@
+{
+  "about": {
+    "name": "關於",
+    "data": {
+      "name": "馮宇丞",
+      "firstName": "Yu-Cheng",
+      "lastName": "Feng",
+      "englishName": "Thomas",
+      "email": "fyc621@gmail.com",
+      "emailHref": "mailto:fyc621@gmail.com",
+      "github": "yucheng21",
+      "githubHref": "https://github.com/YuCheng21",
+      "website": "yucheng.me",
+      "websiteHref": "https://yucheng.me/",
+      "description1": "我目前在高雄科技大學 HPDS Lab 修讀碩士學位。研究深度學習技術與「3D Vision」相關主題。"
+    }
+  },
+  "education": {
+    "name": "教育",
+    "data": [
+      {
+        "school": "國立高雄科技大學",
+        "degree": "電機工程碩士",
+        "fieldOfStudy": "電機工程系",
+        "location": "高雄|台灣",
+        "date": "2021-",
+        "description": []
+      },
+      {
+        "school": "國立高雄應用科技大學",
+        "degree": "電機工程學士",
+        "fieldOfStudy": "電機工程系",
+        "location": "高雄|台灣",
+        "date": "2017-2021",
+        "description": []
+      }
+    ]
+  },
+  "workExperiences": {
+    "name": "經歷",
+    "data": [
+      {
+        "title": "科技部計畫：基於區塊鏈的雙盲測驗平台",
+        "title2": "（MOST111-2221-E992-048）",
+        "job": "使用介面開發",
+        "location": "高雄科技大學電機工程系",
+        "date": "2022.08-",
+        "description": [
+          "使用 Python Flask 基於 MVC 框架開發網站前端，與後端區塊鏈串接 API 實現基於區塊鏈的雙盲測驗平台。",
+          "設計前端使用者介面，使計劃採用的區塊鏈技術以圖形化介面操作，方便一般用戶使用。"
+        ],
+        "href": "https://github.com/YuCheng21/block-dbt",
+        "href2": "https://www.grb.gov.tw/search/planDetail?id=14508043"
+      },
+      {
+        "title": "科技部計畫：血癌照護管理系統",
+        "title2": "（MOST110-2511-H037-001）",
+        "job": "網頁系統開發",
+        "location": "高雄醫學大學護理系",
+        "date": "2022.01-2022.06",
+        "description": [
+          "與高雄醫大討論計畫需求並提出系統建議，使用 Figma 設計網站架構，PHP Laravel、MariaDB 開發網站前端與後端。與行動端開發人員討論 API 需求，Swagger 建立 REST API 供行動裝置使用，並且部署在 FreeBSD 系統的 Apache Server 上",
+          "提供醫護人員管理血癌病患的照護資訊與衛教知識，查詢研究結果來了解治療時間脈絡及情境，了解使病人產生負面情緒的原因。"
+        ],
+        "href": "https://github.com/YuCheng21/blood-cancer-management-platform",
+        "href2": "https://www.grb.gov.tw/search/planDetail?id=13865309"
+      },
+      {
+        "title": "教育部計畫：學程進度查詢系統",
+        "title2": "（高科電機）",
+        "job": "網頁系統開發",
+        "location": "高雄科技大學電機工程系",
+        "date": "2021.06-2021.07",
+        "description": [
+          "使用 Python Flask + MySQL 開發網站前端與後端，分析成績單來了解綜合趨勢，為已完成學程的學生產生學程證書，該專案使用 Docker compose 整合 Nginx 並部署於 Ubuntu。",
+          "使參與計劃案「主題式」學程的學生，能在學習期間了解學習進度，提供未來選擇方向的參考，並且提供學程證書激勵學生完成學程來充實自己。"
+        ],
+        "href": "https://github.com/YuCheng21/score-analyse",
+        "href2": "https://www.grb.gov.tw/search/planDetail?id=13924372"
+      }
+    ]
+  },
+  "projects": {
+    "name": "專案",
+    "data": [
+      {
+        "title": "Pixel2point 論文模型實作",
+        "tag": "AI",
+        "description": [
+          "使用 Pytorch 實作 IEEE 期刊未開源的論文，將一張 2D 的輸入圖片，經過 CNN 網路轉換成 3D 點雲，並且進一步調整模型參數測試。",
+          "開源 Pixel2point 論文程式碼，修改初始點雲的形狀與數量等來測試效能。"
+        ],
+        "date": "2022.09-2022.10",
+        "href": "https://github.com/YuCheng21/pixel2point"
+      },
+      {
+        "title": "高醫乳癌平台資料轉換工具",
+        "tag": "GUI",
+        "description": [
+          "使用 PySide 等 QT 套件開發圖形化介面程式，將乳癌平台所匯出的個案副作用資料進行正規化，提供高醫團隊後續分析使用。",
+          "在一週內為高醫研究生開發計劃案資料的統整工具，提供該研究生碩士論文實驗數據，使其能順利在 9 月畢業。"
+        ],
+        "date": "2022.07",
+        "href": "https://github.com/YuCheng21/kmu-excel-tool"
+      },
+      {
+        "title": "C 語言作業批改小工具",
+        "tag": "Tool",
+        "description": [
+          "使用 Python 以 System call 方式呼叫 C 編譯器，批改大學部一年級計算機程式設計每週作業的小工具，幫助做出簡單的給分。",
+          "以往每週要花數天時間批改數百份課堂程式作業，採用小工具輔助，節省繁雜的批改流程，使批改作業的時間壓縮到 1 小時內。"
+        ],
+        "date": "2022.03",
+        "href": "https://github.com/YuCheng21/ta-computer-programming"
+      },
+      {
+        "title": "課程抵免申請系統",
+        "tag": "Website",
+        "description": [
+          "開發系統提供系上需要成績抵免的學生完成抵免作業。包含學生帳號註冊、成績抵免申請、管理員審核、email 通知與驗證信、表單列印等功能。",
+          "數位化成績抵免作業，避免學生申請抵免成績繁瑣的紙本程序，減少系上助理業務量。"
+        ],
+        "date": "2021.07-2021.09",
+        "href": "https://github.com/YuCheng21/credit-transfer"
+      },
+      {
+        "title": "提取課程結構規劃表",
+        "tag": "Tool",
+        "description": [
+          "提取高雄科技大學電機工程系的課程結構規劃表，從 PDF 轉換特定內容到 CSV 格式，方便「教師排課系統」利用。",
+          "使用工具解析 PDF 檔案，避免系上助理每年需人工輸入該年度的開課資料到「教師排課系統」，減少業務量。"
+        ],
+        "date": "2021.08",
+        "href": "https://github.com/YuCheng21/course-extract"
+      },
+      {
+        "title": "專題選組預測系統",
+        "tag": "Website",
+        "description": [
+          "以過往學生必修科目與專題成績作為資料進行線性迴歸，預測學生未來在電力、控制、資通三組可能取得的成績，作為專題選組的參考。",
+          "提供學生大三選組的參考。"
+        ],
+        "date": "2021.05-2021.06",
+        "href": "https://github.com/YuCheng21/group-predict"
+      },
+      {
+        "title": "商城下單機器人",
+        "tag": "GUI",
+        "description": [
+          "透過 Python 爬蟲，自動登入商城網站並開啟商品網址，並且於商品優惠時段開始時進行購買。",
+          "在過年期間以 28 折的價格買到原價 3500 的鍵盤。"
+        ],
+        "date": "2021.02",
+        "href": "https://github.com/YuCheng21/logitech-bot"
+      },
+      {
+        "title": "跟車行動裝置管理",
+        "tag": "Android",
+        "description": [
+          "使用 Java 開發手機地圖程式，並且串接同學提供的後端 API 紀錄資料。",
+          "顯示好友的目前定位與行動路徑，幫助駕駛員在一群好友出遊時，行徑在車隊前方的車輛能夠以此程式觀看到後方車輛的位置。"
+        ],
+        "date": "2019.07-2020.07",
+        "href": "https://github.com/YuCheng21/FriendMap"
+      }
+    ]
+  },
+  "skills": {
+    "name": "技能",
+    "data": {
+      "研究": [
+        "Deep Learning",
+        "3D Vision"
+      ],
+      "程式": [
+        "Python",
+        "Javascript/HTML/CSS",
+        "C",
+        "Java",
+        "PHP",
+        "SQL",
+        "R",
+        "Shell Script"
+      ],
+      "工具:人工智慧": [
+        "Pytorch",
+        "Sklearn",
+        "OpenCV"
+      ],
+      "工具:網路": [
+        "Flask",
+        "Laravel",
+        "Bootstrap",
+        "Tailwindcss",
+        "Swagger"
+      ],
+      "工具:資料庫": [
+        "MySQL",
+        "MariaDB",
+        "SQLite"
+      ],
+      "工具:其它": [
+        "Git",
+        "Docker",
+        "Ubuntu/TrueNAS",
+        "Nginx/Apache",
+        "QT",
+        "Kubernetes",
+        "GCP"
+      ]
+    }
+  },
+  "publications": {
+    "name": "期刊與會議",
+    "data": [
+      {
+        "title": "“A Voxel Generator Based on Autoencoder,” ",
+        "author": "B.-C. Huang, Y.-C. Feng, and T.-Y. Liang, ",
+        "journal": "Applied Sciences, ",
+        "volume": "vol. 12, ",
+        "number": "no. 21, ",
+        "date": "Jan. 2022, ",
+        "doi": "doi: 10.3390/app122110757.",
+        "href": "https://doi.org/10.3390/app122110757"
+      },
+      {
+        "title": "“An Image Quality Predictor based on Convolution Neural Networks,” ",
+        "author": "W.-S. Yang, Y.-C. Feng, and T.-Y. Liang, ",
+        "publishedIn": "in 2021 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS), ",
+        "date": "Nov. 2021, ",
+        "page": "pp. 1–2. ",
+        "doi": "doi: 10.1109/ISPACS51563.2021.9651075.",
+        "href": "https://doi.org/10.1109/ISPACS51563.2021.9651075"
+      }
+    ]
+  },
+  "honors": {
+    "name": "獲獎",
+    "data": [
+      {
+        "date": "2021",
+        "title": "110 年度教學助理表現優異",
+        "location": "高科大"
+      },
+      {
+        "date": "2016",
+        "title": "105 年全國高級中等學校工業類科學生技藝競賽機電整合職種第五名",
+        "location": "內湖高工"
+      }
+    ]
+  }
+}

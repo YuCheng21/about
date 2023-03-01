@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  Favicon  -->
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="../favicon/site.webmanifest"/>
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#444444"/>
+    <meta name="theme-color" content="#ffffff"/>
+
+    <title>Yu-Cheng Feng</title>
+</head>
+<body class="max-w-[768px] mx-auto p-[20px] print:p-0">
+<header>
+    <div class="flex sm:flex-row flex-col justify-between">
+        <img src="../img/avatar/avatar-6.jpg" alt="avatar" class="sm:h-[140px] sm:ml-[20px] sm:block hidden">
+        <div class="sm:order-first">
+            <div class="flex justify-between">
+                <img src="../img/avatar/avatar-6.jpg" alt="avatar" class="sm:hidden h-[150px] ml-[20px] block">
+                <div class="order-first">
+                    <h1 class="mb-2 sm:text-2xl text-xl">
+                        <span><%= htmlWebpackPlugin.options.pageData.about.data.name %></span>
+                        <span>(<%= htmlWebpackPlugin.options.pageData.about.data.firstName %></span>
+                        <span><%= htmlWebpackPlugin.options.pageData.about.data.lastName %>)</span>
+                    </h1>
+                    <ul class="text-sm flex flex-col sm:flex-row sm:space-x-[20px] mb-2">
+                        <li class="flex items-center">
+                            <span class="iconify-inline mr-2" data-icon="fluent:mail-20-filled"></span>
+                            <a href="<%= htmlWebpackPlugin.options.pageData.about.data.emailHref %>">
+                                <%= htmlWebpackPlugin.options.pageData.about.data.email %>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="iconify-inline mr-2" data-icon="akar-icons:github-fill"></span>
+                            <a href="<%= htmlWebpackPlugin.options.pageData.about.data.githubHref %>">
+                                <%= htmlWebpackPlugin.options.pageData.about.data.github %>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="iconify-inline mr-2" data-icon="dashicons:admin-site"></span>
+                            <a href="<%= htmlWebpackPlugin.options.pageData.about.data.websiteHref %>">
+                                <%= htmlWebpackPlugin.options.pageData.about.data.website %>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="iconify-inline mr-2" data-icon="fa:phone-square"></span>
+                            <span><%= htmlWebpackPlugin.options.environment.phone %></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section id="about">
+                <h2>
+                    <span class="iconify inline-block" data-icon="mdi:user-circle"></span>
+                    <span class="align-middle"><%= htmlWebpackPlugin.options.pageData.about.name %></span>
+                </h2>
+                <p><%= htmlWebpackPlugin.options.pageData.about.data.description1 %></p>
+            </section>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="education">
+        <h2>
+            <span class="iconify inline-block" data-icon="fluent:hat-graduation-24-filled"></span>
+            <span class="align-middle"><%= htmlWebpackPlugin.options.pageData.education.name %></span>
+        </h2>
+        <ul>
+            <% htmlWebpackPlugin.options.pageData.education.data.forEach(item => { %>
+            <li class="mb-2">
+                <span class="flex sm:flex-row flex-col justify-between">
+                    <span class="inline-block font-title text-primary-900">
+                        <span><%= item.school %>－<%= item.degree %></span>
+                    </span>
+                    <span class="inline-block font-title italic"><%= item.date %></span>
+                </span>
+            </li>
+            <% }) %>
+        </ul>
+    </section>
+    <section id="workExperiences">
+        <h2>
+            <span class="iconify inline-block" data-icon="material-symbols:work"></span>
+            <span class="align-middle"><%= htmlWebpackPlugin.options.pageData.workExperiences.name %></span>
+        </h2>
+        <ul>
+            <% htmlWebpackPlugin.options.pageData.workExperiences.data.forEach((value, key) => { %>
+            <li class="mb-2">
+                <span class="flex sm:flex-row flex-col justify-between">
+                    <span class="inline-block font-title text-primary-900 underline underline-offset-2">
+                        <a href="<%= value.href %>"><%= value.title %></a>
+                        <a href="<%= value.href2 %>"><%= value.title2 %></a>
+                    </span>
+                    <span class="inline-block font-title italic"><%= value.job %> | <%= value.date %></span>
+                </span>
+                <ul class="pl-4 -indent-4">
+                    <% value.description.forEach((item, index) => { %>
+                        <li class="mb-2">
+                            <span class="iconify inline-block text-primary-900" data-icon="fluent:arrow-enter-left-24-filled" data-flip="horizontal"></span>
+                            <span class="font-title">
+                            <% if(index == 0){ %>
+                                <span>內容：</span>
+                            <% }else{ %>
+                                <span>成就：</span>
+                            <% } %>
+                            </span>
+                            <span class="text-[#666666]"><%= item %></span>
+                        </li>
+                    <% }) %>
+                </ul>
+            </li>
+            <% }) %>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>
+            <span class="iconify inline-block" data-icon="mdi:package-variant"></span>
+            <span class="align-middle"><%= htmlWebpackPlugin.options.pageData.projects.name %></span>
+        </h2>
+        <ul>
+            <% htmlWebpackPlugin.options.pageData.projects.data.forEach((value, key) => { %>
+            <li class="mb-2">
+                    <span class="flex sm:flex-row flex-col justify-between">
+                        <span class="inline-block">
+                            <a href="<%= value.href %>" class="font-title text-primary-900 underline underline-offset-2"><%= value.title %></a>
+                            <span class="italic">[<%= value.tag %>]</span>
+                        </span>
+                        <span class="inline-block font-title italic"><%= value.date %></span>
+                    </span>
+                <ul class="pl-4 -indent-4">
+                    <% value.description.forEach((item, index) => { %>
+                    <li class="mb-2">
+                        <span class="iconify inline-block text-primary-900" data-icon="fluent:arrow-enter-left-24-filled" data-flip="horizontal"></span>
+                        <span class="font-title">
+                        <% if(index == 0){ %>
+                            <span>內容：</span>
+                        <% }else{ %>
+                            <span>成就：</span>
+                        <% } %>
+                        </span>
+                        <span class="text-[#666666]"><%= item %></span>
+                    </li>
+                    <% }) %>
+                </ul>
+            </li>
+            <% }) %>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>
+            <span class="iconify inline-block" data-icon="mdi:gear"></span>
+            <span class="align-middle"><%= htmlWebpackPlugin.options.pageData.skills.name %></span>
+        </h2>
+        <ul>
+            <% Object.keys(htmlWebpackPlugin.options.pageData.skills.data).forEach((key, value) => { %>
+            <li class="flex sm:flex-row flex-col mb-2">
+                <div class="font-title italic sm:w-[20%]"><%= key %></div>
+                <div class="w-[80%] sm:text-right">
+                    <% htmlWebpackPlugin.options.pageData.skills.data[key].forEach((item, index) => { %>
+                    <% if(index + 1 < htmlWebpackPlugin.options.pageData.skills.data[key].length){ %>
+                    <span><%= item %> | </span>
+                    <% }else{ %>
+                    <span><%= item %></span>
+                    <% } %>
+                    <% }) %>
+                </div>
+            </li>
+            <% }) %>
+        </ul>
+    </section>
+    <section id="publications">
+        <h2>
+            <span class="iconify inline-block" data-icon="bxs:book-bookmark"></span>
+            <span class="align-middle"><%= htmlWebpackPlugin.options.pageData.publications.name %></span>
+        </h2>
+        <ul class="list-decimal list-inside">
+            <% htmlWebpackPlugin.options.pageData.publications.data.forEach(item => { %>
+            <li class="mb-2">
+                <span><%= item.author %></span>
+                <span><%= item.title %></span>
+                <span class="italic"><%= item.publishedIn %></span>
+                <span class="italic"><%= item.journal %></span>
+                <span><%= item.volume %></span>
+                <span><%= item.number %></span>
+                <span><%= item.date %></span>
+                <span><%= item.page %></span>
+                <a href="<%= item.href %>" target="_blank"><%= item.doi %></a>
+            </li>
+            <% }) %>
+        </ul>
+    </section>
+    <section id="honors">
+        <h2>
+            <span class="iconify inline-block" data-icon="healthicons:award-trophy"></span>
+            <span class="align-middle"><%= htmlWebpackPlugin.options.pageData.honors.name %></span>
+        </h2>
+        <ul>
+            <% htmlWebpackPlugin.options.pageData.honors.data.forEach((value, key) => { %>
+            <li class="mb-2">
+                <div class="flex sm:flex-row flex-col justify-between">
+                    <div class="flex sm:flex-row flex-col">
+                        <span class="italic mr-2"><%= value.date %></span>
+                        <span class="text-primary-900"><%= value.title %></span>
+                    </div>
+                    <span class="inline-block italic"><%= value.location %></span>
+                </div>
+            </li>
+            <% }) %>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>

@@ -1,21 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     body{
-        @apply font-serif text-sm
+        @apply font-Noto-Sans-TC text-sm leading-normal font-[500]
     }
     h1 {
-        @apply text-2xl font-bold
+        @apply text-2xl font-title
     }
     h2 {
-        @apply text-xl font-bold border-b-2 border-b-black mb-2
+        @apply text-xl font-title border-b-2 border-b-black mb-2
     }
     section {
         @apply mb-4
     }
-    section ul>li>span{
-        @apply break-after-avoid-page
+    section ul>li{
+        @apply break-inside-avoid-page
+    }
+    .font-title {
+        @apply font-[900]
     }
 }
